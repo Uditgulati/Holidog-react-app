@@ -42,9 +42,9 @@ class FetchBreed extends Component {
 
 		function renderDropdownButton(title, i) {
 		  return (
-		    <SplitButton
+		    <SplitButton bsSize="large"
 		      bsStyle={title.toLowerCase()}
-		      title={title}
+		      title="Select Breed"
 		      key={i}
 		      id={`split-button-basic-${i}`}
 		    >
@@ -54,7 +54,8 @@ class FetchBreed extends Component {
 		}
 
 		return (
-			<div style={{display: 'inline-flex'}}>
+			<div style={{display: 'inline-block'}}>
+				<h2>Hi! Welcome!</h2><br />
 				<ButtonToolbar>{BUTTONS.map(renderDropdownButton)}</ButtonToolbar>
 			</div>
 		);
