@@ -19,7 +19,7 @@ class Breed extends Component {
 
 	render() {
 		const images = this.state.image.map(img => {
-			return <img src={img} />;
+			return <img src={img} width="200px" height="200px" />;
 		})
 
 		return (
