@@ -48,14 +48,14 @@ class FetchBreed extends Component {
 		      key={i}
 		      id={`split-button-basic-${i}`}
 		    >
-		      <MenuItem eventKey="1">{name}</MenuItem>
+		      <MenuItem eventKey="1" style={{height: 200 ,overflowY: 'scroll'}}>{name}</MenuItem>
 		    </SplitButton>
 		  );
 		}
 
 		return (
 			<div style={{display: 'inline-block'}}>
-				<h2>Hi! Welcome!</h2><br />
+				<h2 style={{color: 'darkorchid', fontFamily: 'courier', fontWeight: 'bold'}}>Hi! Welcome!</h2><br />
 				<ButtonToolbar>{BUTTONS.map(renderDropdownButton)}</ButtonToolbar>
 			</div>
 		);
